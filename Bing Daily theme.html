@@ -1,0 +1,57 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <base target="_parent">
+    <title data-trilium-title>Bing Daily theme</title>
+  </head>
+  
+  <body>
+    <div class="content">
+       <h1 data-trilium-h1>Bing Daily theme</h1>
+
+      <div class="ck-content">
+        <p><a href="https://github.com/Nriver/bing-daily-theme">https://github.com/Nriver/bing-daily-theme</a>&nbsp;</p>
+        <p>Made by <a href="https://github.com/Nriver/">Nriver </a>with love and peace
+          : )</p>
+        <p>&nbsp;</p>
+        <h2>Tips | 提示</h2>
+        <p>&nbsp;</p>
+        <h3>Popup message | 弹出提示</h3>
+        <p>There Will be a popup message upon start, you can turn it off in&nbsp;
+          <a
+          class="reference-link" href="Bing%20Daily%20theme/1_UpdateWallpaper.js/config.js">config</a>.</p>
+        <p>启动时会显示壁纸的信息，你可以在&nbsp;<a class="reference-link" href="Bing%20Daily%20theme/1_UpdateWallpaper.js/config.js">config</a>&nbsp;里面关闭</p>
+        <p>&nbsp;</p>
+        <h3>Make it work on mobile phone | 在手机上生效</h3>
+        <p>If the css does not take effect on the phone, you can try to delete the
+          browser's cache.</p>
+        <p>如果手机上不生效，请尝试删除浏览器缓存。</p>
+        <p>&nbsp;</p>
+        <p>Or, you can disable the cache for <code>/api/notes/download</code>. For
+          example, Nginx could be set like this:</p>
+        <p>或者，你可以禁用 <code>/api/notes/download</code> 的缓存。示例的Nginx配置如下：</p>
+        <p>&nbsp;</p><pre><code class="language-text-plain">location /api/notes/download/ {
+   # disable cache
+   # 禁用缓存
+   add_header Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0";
+   add_header Pragma "no-cache";
+   add_header Expires "0";
+   
+   # normal proxy config
+   proxy_pass http://127.0.0.1:8080/api/notes/download/;
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection 'upgrade';
+   proxy_set_header Host $host;
+   proxy_cache_bypass $http_upgrade;
+}</code></pre>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </body>
+
+</html>

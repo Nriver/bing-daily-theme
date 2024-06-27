@@ -1,0 +1,209 @@
+/* 
+
+Bing Daily theme for Trilium
+by Nriver
+
+transparency
+00 0% complete transparent
+33 20% transparent
+90 50% transparent
+CC 80% transparent
+FF 100% no transparent
+*/
+
+:root {
+    --background-image-url: url("https://www.bing.com/th?id=OHR.FlorenceDuomo_ZH-CN7379412586_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp");
+
+    --theme-style: dark;
+
+    --main-font-size: normal;
+
+    --tree-font-size: normal;
+
+    --detail-font-size: normal;
+
+    --monospace-font-size: normal;
+
+    --main-background-color: #202124DD;
+    --main-text-color: #ccc;
+    --main-border-color: #aaa;
+    --dropdown-border-color: #555;
+    
+    /* background of ckeditor popup menu */
+    /* background of alert message box */
+    --accented-background-color: #202124EE;
+    /* #dfdedb is the invert color of #202124 */
+    /* background of slider toggle button */
+    --more-accented-background-color: #dfdedb22;
+
+    --button-background-color: transparent;
+    --button-border-color: #ccc;
+    --button-text-color: currentColor;
+    --button-border-radius: 5px;
+    --button-disabled-background-color: transparent;
+    --button-disabled-text-color: #999;
+
+    --primary-button-background-color: #888;
+    --primary-button-text-color: white;
+    --primary-button-border-color: #999;
+
+    --muted-text-color: #bbb;
+
+    --input-text-color: #ccc;
+    --input-background-color: #333;
+
+    
+    --hover-item-text-color: #ccc;
+    --hover-item-background-color: transparent;
+    --hover-item-border-color: #aaa;
+
+    --active-item-text-color: black;
+    --active-item-background-color: #777;
+    --active-item-border-color: transparent;
+    
+
+    --menu-text-color: white;
+    --menu-background-color: #202124EE;
+
+    --modal-background-color: #202124CC;
+    --modal-backdrop-color: #444;
+
+    --launcher-pane-background-color: #202124CC;
+    --launcher-pane-text-color: #AAAAAA;
+
+    --left-pane-background-color: #202124EE;
+    --left-pane-text-color: #AAAAAA;
+
+    --active-tab-background-color: #202124EE;
+    --active-tab-hover-background-color: #737373;
+    --active-tab-text-color: #ccc;
+
+    --inactive-tab-background-color: #20212444;
+    --inactive-tab-hover-background-color: #525252;
+    --inactive-tab-text-color: #bbb;
+
+    --scrollbar-border-color: #666;
+    --scrollbar-background-color: #202124DD;
+    --tooltip-background-color: #202124EE;
+    --link-color: lightskyblue;
+
+    --mermaid-theme: dark;
+}
+
+
+body ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+body .CodeMirror {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+.excalidraw.theme--dark {
+    --theme-filter: invert(80%) hue-rotate(180deg) !important;
+}
+
+body .todo-list input[type="checkbox"]:not(:checked):before {
+    border-color: var(--muted-text-color) !important;
+}
+
+body ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+body .CodeMirror {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+.excalidraw.theme--dark {
+    --theme-filter: invert(80%) hue-rotate(180deg) !important;
+}
+
+body .todo-list input[type="checkbox"]:not(:checked):before {
+    border-color: var(--muted-text-color) !important;
+}
+
+/* background image */
+body{
+    background-color: transparent !important;
+    background-image: var(--background-image-url) !important;
+    background-size: cover; /* Maintain aspect ratio, cover the entire background area */
+    background-repeat: no-repeat;
+}
+/* mobile device adaption */
+@media (max-width: 768px) {
+    background-position: center center; /* Center the image */
+}
+
+
+/* launcher panel */
+#launcher-pane{
+    background-color: #202124CC !important;
+}
+/* launcher button */
+#launcher-pane .launcher-button{
+    background-color: transparent !important;
+}
+/* upper left drop down menu */
+ul.dropdown-menu{
+    background-color: #202124DD !important;
+}
+
+/* left panel */
+#left-pane{
+    background-color: #202124DD !important;
+}
+/* left panel float button */
+.tree-actions {
+    background-color: #202124DD !important;
+}
+/* quick search bar */
+#left-pane input.search-string, select.search-string, textarea.search-string {
+    background-color: #20212477 !important;
+}
+
+/* gutter */
+div.gutter.gutter-horizontal{
+    background-color: #202124DD !important;
+}
+
+/* right panel */
+#rest-pane {
+    background-color: #202124DD !important;
+}
+/* tab panel */
+div.tab-row-widget{
+    background-color: #20212444 !important;
+}
+/* tab button */
+.note-tab-wrapper{
+    background-color: #20212455 !important;
+}
+/* current tab button */
+.note-tab[active] .note-tab-wrapper{
+    background-color: #202124EE !important;
+}
+/* child note preview */
+div.note-book-card{
+    background-color: #202124AC !important;
+}
+
+/* other */
+/* card/grid view */
+div.note-book-card {
+    background-color: #202124AA !important;
+}
+
+
+/* mobile */
+.mobile .quick-search {
+    background-color: #202124AA !important;
+}
+
+.mobile .tree-wrapper {
+    background-color: #202124AA !important;
+}
+
+#root-widget > div:nth-child(2) > div.component {
+    background-color: #202124AA !important;
+}
