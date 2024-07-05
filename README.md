@@ -14,7 +14,7 @@ Set Trilium Notes background with Bing daily wallpaper. It will change every day
 
 # 📸 Screenshots
 
-Heavily modified based on the original dark theme.
+Heavily modified based on the original dark theme. It's recommended to use [trilium-enhancement](https://github.com/Nriver/trilium-enhancement) with this theme together.
 
 ![shot1](docs/screenshot%201.webp)
 

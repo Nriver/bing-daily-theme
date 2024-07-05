@@ -14,7 +14,7 @@ English | <a href="README_CN.md">简体中文</a>
 
 # 📸 截图
 
-在原始黑暗主题的基础上进行了大量修改。
+在原始黑暗主题的基础上进行了大量修改。推荐这个主题和 [trilium-enhancement](https://github.com/Nriver/trilium-enhancement) 一起使用。
 
 ![截图1](docs/screenshot%201.webp)
 
